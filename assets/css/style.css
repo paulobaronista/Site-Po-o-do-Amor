@@ -1,0 +1,513 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'monotype_corsivaregular';
+    src: url('../fonts/mtcorsva-webfont.eot');
+    src: url('../fonts/mtcorsva-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mtcorsva-webfont.woff2') format('woff2'),
+         url('../fonts/mtcorsva-webfont.woff') format('woff'),
+         url('../fonts/mtcorsva-webfont.ttf') format('truetype'),
+         url('../fonts/mtcorsva-webfont.svg#monotype_corsivaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/MyriadPro-Light.eot');
+  src: url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MyriadPro-Light.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Light.woff') format('woff'),
+       url('../fonts/MyriadPro-Light.ttf') format('truetype'),
+       url('../fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body { font-family: 'MyriadPro-Light', Helvetica, Arial, sans-serif;  font-size: 100%; background-color: #eddac4;} /* 20 ÷ 16 = 1.25rem. */  /*font-family: "Monotype Corsiva", Times, serif; */
+
+/* Menu */
+header {
+ background: url(../images/header.jpg) 50% 0 no-repeat;
+ margin: 0 auto;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ float: left;
+ height: 246px;
+ position: relative;
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ background-size: cover;
+ z-index: 9999;
+}
+header h1 a {
+ width: 278px;
+ height: 188px;
+ background: url(../images/logo-pocao-do-amor.png) no-repeat;
+ text-indent: -9999px;
+ float: left;
+ position: absolute;
+ z-index: 100;
+ top: -200px;
+ left: 350px;
+}
+header #menu {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ top: 246px;
+ position: relative;
+ float: left;
+}
+header nav {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ position: relative;
+ float: left;
+ background-color: #FFF;
+}
+header #menu img {
+ max-width: 100%;
+ min-width: 1024px;
+}
+header nav ul {
+ width: 1024px;
+ height: 40px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 0 0 0 -512px;
+}
+header nav ul li {
+ height: 30px;
+ float: left;
+ margin: -9px 59px 0;
+-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+header nav ul li a {
+ font-family: "Monotype Corsiva", Times, serif;
+ font-size: 1.3rem;
+ text-decoration: none;
+ float: left;
+ color: #3e1b1c;
+ padding: 0 2px 9px 2px;
+}
+header nav ul li:hover,
+.active-home,
+.active-pocaodoamor,
+.active-delicias, 
+.active-encomendas,
+.active-contato {
+  height: 35px;
+  margin-top: -15px;
+}
+ header nav ul li a:hover {
+  padding: 0 2px 18px 2px;
+}
+.m-pocaodoamor {
+ background: url(../images/detalhe-menu.png) no-repeat 38px 30px;
+}
+.m-pocaodoamor:hover, .active-pocaodoamor {
+ background-position: 38px 22px;
+}
+.m-home {
+ background: url(../images/detalhe-menu.png) no-repeat 1px 30px;
+}
+.m-home:hover, .active-home  {
+ background-position: 1px 22px;
+}
+.m-delicias {
+ background: url(../images/detalhe-menu.png) no-repeat 12px 30px;
+}
+.m-delicias:hover, .active-delicias {
+ background-position: 12px 22px;
+}
+.m-encomendas {
+ background: url(../images/detalhe-menu.png) no-repeat 27px 30px;
+}
+.m-encomendas:hover, .active-encomendas {
+ background-position: 27px 22px;
+}
+.m-contato {
+ background: url(../images/detalhe-menu.png) no-repeat 15px 30px;
+}
+.m-contato:hover, .active-contato {
+ background-position: 15px 22px;
+}
+/* Fim Menu */
+
+/* Base */
+.container {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ position: relative;
+ float: left;
+}
+/* Fim Base */
+
+/* Home */
+#home {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ position: relative;
+ float: left;
+ margin-top: 46px;
+ background: url(../images/topo-home.png) no-repeat;
+}
+#box-home {
+ background: url(../images/box-home.png) 50% 0 no-repeat;
+ margin: 0 auto;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ height: 388px;
+ margin-top: 180px;
+ position: relative;
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ background-size: cover;  
+}
+#box-home-itens {
+ width: 1200px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 55px 0 200px -600px;
+}
+#box-home-itens ul li {
+ width: 272px;
+ height: 266px;
+ position: relative;
+ float: left;
+ margin: 0 14px;
+ text-indent: -9999px;
+ cursor: pointer;
+}
+#box-01 {
+ background: url(../images/item-01.png) no-repeat;
+}
+#box-01:hover {
+ background: url(../images/item-01-hover.png) no-repeat; 
+}
+#box-02 {
+ background: url(../images/item-02.png) no-repeat;
+}
+#box-02:hover {
+ background: url(../images/item-02-hover.png) no-repeat; 
+}
+#box-03 {
+ background: url(../images/item-03.png) no-repeat;
+}
+#box-03:hover {
+ background: url(../images/item-03-hover.png) no-repeat; 
+}
+#box-04 {
+ background: url(../images/item-04.png) no-repeat;
+}
+#box-04:hover {
+ background: url(../images/item-04-hover.png) no-repeat; 
+}
+#box-home-receita {
+ width: 1024px;
+ height: 640px;
+ position: relative;
+ left: 50%;
+ margin: 0 0 0 -512px;
+ background: url(../images/box-home-receita.png) no-repeat 95px 30px; 
+}
+#box-home-receita-txt {
+ width: 500px;
+ height: 360px;
+ position: relative;
+ float: left;
+ margin: 147px 0 0 265px;
+ text-align: center;
+}
+#box-home-receita-txt h2 {
+ font-family: 'monotype_corsivaregular';
+ color: #3e1b1c;
+ font-size: 1.75rem;   
+}
+#box-home-receita-txt p {
+ color: #3e1b1c;
+ font-size: 1.08rem;
+ line-height: 25px;  
+}
+/* Fim Home */
+
+/* Sobre */
+#pocaodoamor {
+ background: url(../images/sobre.png) 50% 0 no-repeat;
+ margin: 0 auto;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ height: 719px;
+ margin-top: 50px;
+ position: relative;
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ background-size: cover;  
+}
+#pocaodoamor figure img {
+ max-width: 100%;
+ margin-top: 55px;  
+}
+/* Fim Sobre */
+
+/* Encomendas */
+#encomendas {
+ background: url(../images/banner-encomendas.png) 50% 0 no-repeat;
+ margin: 0 auto;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ height: 197px;
+ margin-top: 64px;
+ position: relative;
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ background-size: cover;  
+}
+#box-encomendas {
+ width: 1094px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 210px 0 0 -547px;
+}
+/* Fim Encomendas */
+
+/* Delicias */
+#delicias {
+ width: 1250px;
+ height: 1170px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 75px 0 0 -625px;
+ background: url(../images/delicias.png) no-repeat; 
+}
+#box-delicias {
+ width: 1100px;
+ height: 570px;
+ position: absolute;
+ float: left;
+ bottom: 105px;
+ left: 75px;
+ overflow-x: hidden;
+}
+.abas {
+ width: 270px;
+ height: 100%;
+ position: absolute;
+ left: 10px;
+}
+.abas li {
+  background: url(../images/linha-slider.png) 45px 51px no-repeat; 
+  padding: 8px 5px;
+  margin: 20px 0;
+  float: left;
+}
+.abas li:first-child {
+  margin-top: 110px;
+}
+.abas li a {
+ width: 265px;
+ padding: 15px 0;
+ margin: 0;
+ font-family: "Monotype Corsiva", Times, serif;
+ font-size: 1.5rem;
+ text-decoration: none;
+ color: #3e1b1c;
+ float: left;
+ background: url(../images/seta-slider.png) 202px 10px no-repeat;
+-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.abas li a:hover {
+background: url(../images/seta-slider.png) 222px 10px no-repeat; 
+}
+.activo {
+
+}
+#box-abas { 
+position:relative; 
+width:803px; 
+height:auto;
+float: right; 
+}
+#box-abas div { 
+  display:none;
+}
+/* Fim Delicias */
+
+
+/* Contato */
+#contato {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ position: relative;
+ float: left;
+ margin-top: 50px; 
+}
+#box-contato {
+ width: 1094px;
+ height: 1005px;
+ background: url(../images/contato.png) no-repeat #FFF;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 50px 0 40px -547px;
+}
+#box-contato-box {
+ width: 500px;
+ position: relative;
+ margin: 300px 0 0 310px;  
+}
+#box-contato-box form {
+ width: 400px;
+ margin-left: 50px;
+}
+#box-contato-box form label {
+ color: #3e1b1c;
+ font-size: 1.5rem;
+ font-family: "Monotype Corsiva", Times, serif;
+}
+#box-contato-box form input, #box-contato-box form textarea {
+ font-size: 0.8rem;
+ font-family: 'MyriadPro-Light';
+ width: 394px;
+ border: none;
+ padding: 5px 3px 0 3px;
+ text-align: center;
+ background: url(../images/dt-contato.png) 0px 5px no-repeat;
+ color: #3e1b1c;
+}
+#box-contato-box form input {
+ height: 100px; 
+}
+#box-contato-box form textarea {
+ padding: 45px 3px 0 3px;
+}
+.statusNome {
+ margin-left: 160px; 
+}
+.statusEmail {
+ margin-left: 160px; 
+}
+.statusMensagem {
+ margin-left: 150px; 
+}
+#box-contato-box form button {
+ border: none;
+ color: #FFF;
+ width: 86px;
+ height: 84px;
+ text-indent: -9999px;
+ cursor: pointer;
+}
+.btn_enviar {
+ background: url(../images/enviar.png) no-repeat;
+ margin-left: 110px;
+}
+.btn_enviar:hover {
+ background: url(../images/enviar-hover.png) no-repeat;
+}
+.btn_limpar {
+ background: url(../images/limpar.png) no-repeat;
+}
+.btn_limpar:hover {
+ background: url(../images/limpar-hover.png) no-repeat;
+}
+/* Fim Contato */
+
+/* Contato Avisos */
+#contato-avisos {
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ position: relative;
+ float: left;
+ margin-top: 50px; 
+}
+#box-contato-sucesso {
+ width: 1094px;
+ height: 669px;
+ background: url(../images/contato-enviada.png) no-repeat #FFF;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 50px 0 40px -547px;
+}
+#box-contato-insucesso {
+ width: 1094px;
+ height: 669px;
+ background: url(../images/contato-fail.png) no-repeat #FFF;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 50px 0 40px -547px;
+}
+
+/* Fim Contato Avisos */
+
+/* Footer */
+footer {
+ background: url(../images/linha-footer.png) 50% 0 no-repeat;
+ margin: 0 auto;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 1200px;
+ height: 30px;
+ float: left;
+ position: relative;
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#rodape {
+ width: 1024px;
+ height: 17px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 40px 0 10px -512px; 
+ color: #3d1b1c;
+ font-size: 1.06rem;
+ font-weight: bold; 
+}
+#spicycomm {
+ float: right; 
+} 
+/* Fim Footer */
+
+/* to top */
+#toTop { 
+   width:50px;  /* Largura do botão*/ 
+   height:50px; /*Altura do botão*/ 
+   padding:5px; /* Distancia entre texto e borda */ 
+   position:fixed; /* Posição que faz com que ele corra por toda a página*/ 
+   bottom:50px; 
+   right:50px; 
+   cursor:pointer; 
+}
+::-webkit-input-placeholder { color: inherit;} /*Atributo para o Chrome colocar cor dentro do input*/
+
+/* Hack ie10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
+
+/* Hack Chorme */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
